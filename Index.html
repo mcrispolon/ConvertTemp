@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Temp Convert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="drpOutputFormat">Select Output Type</label>
+                    <select class="form-control" id="drpOutputFormat">
+                        <option value="0">JSON</option>
+                        <option value="1">XML</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="drpConvertType">Select Conversion</label>
+                    <select class="form-control" id="drpConvertType">
+                        <option value="0">Celcius to Fahrenheit</option>
+                        <option value="1">Fahrenheit to Celcius</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="txtTemperature" type="number"  placeholder="Enter Temperature Value">
+                </div>
+                <div class="form-group">
+                    <button id="btnConvert" class="btn btn-primary">Convert</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"></script>
+    <script src="http://goessner.net/download/prj/jsonxml/json2xml.js"></script>
+    <script src="converter.js"></script>
+
+</body>
+</html>
